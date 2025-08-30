@@ -25,19 +25,4 @@ This repository contains **15 mini frontend projects** built to practice and imp
 
 ---
 
-## 📂 Folder Structure
-mini-projects/
-├── project-01/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
-├── project-02/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
-...
-├── project-15/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
-└── README.md
+
