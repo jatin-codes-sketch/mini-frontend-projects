@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 102vh;
+    background: linear-gradient(135deg, rgb(6, 219, 6), yellowgreen);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: white;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.container h1 {
+    align-self: center;
+    padding: 1rem;
+}
+
+.balance-screen {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background: linear-gradient(165deg, white, green);
+}
+
+.balance-screen .price {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.balance-screen .income-expense {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.income-expense .income, 
+.income-expense .expense {
+    background-color: white;
+    width: 50%;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 12px;
+}
+
+.income-expense .income {
+    color: green;
+}
+
+.income-expense .expense {
+    color: red;
+}
+
+.income-expense .price {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.transaction-screen {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    padding: 0 1rem;
+    flex-grow: 1;
+    align-items: flex-start;
+}
+
+
+.transaction-screen .transaction_info {
+    width: 50%;
+    max-height: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    flex-grow: 1;
+}
+
+
+.transaction-screen .transaction_info::-webkit-scrollbar {
+    display: none;
+}
+
+.transaction_info ul {
+    list-style-type: none;
+}
+
+.transaction_info .trans {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 0 0.5rem 0 1rem;
+    border-radius: 7px;
+    border-right: 5px solid green;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.04);
+    transition: all ease 0.3s;
+    margin-bottom: 0.6rem;
+    background: white;
+}
+
+.transaction_info .trans:hover {
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.07);
+    transform: translateY(-2px);
+}
+
+.transaction_info .trans .object {
+    flex-grow: 1;
+}
+
+.transaction_info .trans .fa-xmark {
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.transaction_info .trans .fa-xmark:hover {
+    color: red;
+}
+
+.transaction-screen .add_transaction {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.add_transaction p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.add_transaction .trans-description,
+.add_transaction .trans-amount {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.add_transaction span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    color: #444;
+}
+
+.add_transaction input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.add_transaction input:focus {
+    border-color: green;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.3);
+}
+
+.add_transaction .trans-amount span:last-child {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 0.2rem;
+    color: #555;
+}
+
+.add_transaction button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add_transaction button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 90%;
+    }
+
+    .transaction-screen {
+        flex-direction: column;
+    }
+
+    .transaction-screen .transaction_info,
+    .transaction-screen .add_transaction {
+        width: 100%;
+    }
+
+    .transaction-screen .transaction_info {
+        max-height: 100px;
+        scrollbar-width:thin;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .balance-screen {
+        padding: 0.8rem;
+    }
+
+    .balance-screen .price {
+        font-size: 1.4rem;
+    }
+
+    .income-expense .income,
+    .income-expense .expense {
+        min-height: 60px;
+        margin: 0.5rem;
+    }
+
+    .transaction_info .trans {
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+
+    .add_transaction input {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .add_transaction button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}

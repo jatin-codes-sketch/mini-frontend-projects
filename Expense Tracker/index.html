@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <div class="balance-screen">
+            <p>Your Balance</p>
+            <span class="price">2,910.00</span>
+            <div class="income-expense">
+                <div class="income">
+                    <p>Income</p>
+                    <span class="price">4721.00</span>
+                </div>
+                <div class="expense">
+                    <p>Expenses</p>
+                    <span class="price">4721.00</span>
+                </div>
+            </div>
+        </div>
+
+        <p style="font-size: larger; font-weight:600; margin-left:1rem">Transactions</p>
+        <div class="transaction-screen">
+            <div class="transaction_info">
+                <ul class="trans-list">
+                    <li class="trans">
+                        <span class="object">object</span>
+                        <div class="detail">
+                            <span class="price">500.00</span>
+                            <i class=" fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="add_transaction">
+                <p>Add Transaction</p>
+                <div class="trans-description">
+                    <span>Description</span>
+                    <input type="text" name="" id="">
+                </div>
+                
+                <div class="trans-amount">
+                    <span>Amount</span>
+                    <input type="text" name="" id="">
+                    <span>Use negative (-) for expenses</span>
+                </div>
+
+                <button class="btn">Add Transaction</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
