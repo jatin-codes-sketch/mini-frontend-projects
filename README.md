@@ -8,9 +8,9 @@ This repository contains **15 mini frontend projects** built to practice and imp
 | Project No. | Title / Description |
 |-------------|---------------------|
 | 1 | Project 1 – Quiz game ✅ |
-| 2 | Project 2 – *Coming Soon* |
-| 3 | Project 3 – *Coming Soon* |
-| 4 | Project 4 – *Coming Soon* |
+| 2 | Project 2 – Color Palette ✅ |
+| 3 | Project 3 – Drag & Drop Board ✅ |
+| 4 | Project 4 – Expense Tracker ✅ |
 | 5 | Project 5 – *Coming Soon* |
 | 6 | Project 6 – *Coming Soon* |
 | 7 | Project 7 – *Coming Soon* |
