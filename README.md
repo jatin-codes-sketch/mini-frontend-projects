@@ -11,7 +11,7 @@ This repository contains **15 mini frontend projects** built to practice and imp
 | 2 | Project 2 – Color Palette ✅ |
 | 3 | Project 3 – Drag & Drop Board ✅ |
 | 4 | Project 4 – Expense Tracker ✅ |
-| 5 | Project 5 – *Coming Soon* |
+| 5 | Project 5 – Bookmark Saver ✅ |
 | 6 | Project 6 – *Coming Soon* |
 | 7 | Project 7 – *Coming Soon* |
 | 8 | Project 8 – *Coming Soon* |
