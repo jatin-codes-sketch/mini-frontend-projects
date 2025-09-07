@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #3db7ca, #7873f5);
+  animation: glowShift 6s ease-in-out infinite alternate;
+}
+
+@keyframes glowShift {
+  0% { filter: brightness(1) saturate(1.2); }
+  100% { filter: brightness(1.3) saturate(1.8); }
+}
+
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+}
+
+
+.registration-form {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  animation: fadeIn 1.2s ease;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.registration-form h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+.form-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+
+.form-group input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.8rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.form-group input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+.form-group small {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #ffcccc;
+  visibility: hidden; 
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #5790bf, #7873f5);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+
+button:hover {
+  background: linear-gradient(135deg, #7873f5, #ff6ec4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
