@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Password Generator</h1>
+        </div>
+
+        <div class="password">
+            <input type="text" name="" id="pw" readonly value="">
+            <i class="fa-regular fa-copy"></i>
+        </div>
+
+        <div class="password-editing-section">
+            <ul>
+                <li class="option">
+                    <label for="range" class="range-container">Password Length</label>
+                    <input type="range" name="" id="rangeInput" min="6" max="20" value="12">
+                    <div class="range-value">12</div>
+                </li>
+
+                <li class="option">
+                    <label for="uppercase">Include Uppercase</label>
+                    <input type="checkbox" name="uppercase" id="" checked>
+                </li>
+
+                <li class="option">
+                    <label for="lowercase">Include Lowercase</label>
+                    <input type="checkbox" name="lowercase" id="" checked>
+                </li>
+
+                <li class="option">
+                    <label for="number">Include Numbers</label>
+                    <input type="checkbox" name="number" id="" checked>
+                </li>
+
+                <li class="option">
+                    <label for="symbol">Include Symbols</label>
+                    <input type="checkbox" name="symbol" id="" checked>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="button">
+            <button class="btn"><i class="fa-solid fa-key"></i> Generate Password </button>
+        </div>
+
+        <div class="password-strength">
+            <p>Password Strength: <span id="strength-label">Medium</span></p>
+
+            <div class="strength-meter">
+                <div class="strength-bar"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
